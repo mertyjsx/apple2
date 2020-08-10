@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import ImageAnimation from "../components/ImageAnimation"
+import Laptop from "../components/VideoAnimastion"
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -10,17 +11,8 @@ export default function Home() {
       </Head>
 
       <main >
-      <div className="main-title justify-start">
-        <h1 className="grey-title">
-        Retina Ekran
-        </h1>
-        <h1 className={styles.title}>
-        Büyük ve parlak.
-        </h1>
-        <h1 className={styles.title}>
-        Fikirleriniz gibi.
-        </h1>
-        </div>
+       
+    
         <ImageAnimation ></ImageAnimation>
       
 

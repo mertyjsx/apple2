@@ -3,28 +3,13 @@ import {useEffect,useState} from "react"
 import styles from '../styles/Home.module.css'
 import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 
-export default function Lg() {
+export default function Lg({scrollPosition}) {
 
-  const [scrollPosition, setSrollPosition] = useState(0);
+
   const [fixed, set_fixed] = useState(false);
   const [width, set_width] = useState(0);
   const [orginal_Width,set_o]=useState()
-const handleScroll = () => {
 
-
-
-  const position = window.pageYOffset*0.6;
-    setSrollPosition(position);
-console.log(position)
-};
-
-useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-  
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-    };
-}, []);
 
 useEffect(() => {
 
@@ -37,7 +22,7 @@ let c=orginal_Width<600?120:265
   }
   
   if(fixed&&(scrollPosition<=c||scrollPosition>1700)){
-    console.log("s",scrollPosition)
+  
     set_fixed(false)
   }
     if(width!==window.innerWidth*70/100){
@@ -48,7 +33,7 @@ let c=orginal_Width<600?120:265
     }, [scrollPosition]);
 
 
-console.log(orginal_Width)
+
 let h=0
 if(orginal_Width>600)
      h=scrollPosition&&scrollPosition-265

@@ -28,6 +28,39 @@ a {
   text-decoration: none;
 }
 
+.laptop-height100{
+  height: 80%;
+  width: 80%;
+}
+.laptop-height0{
+
+  display: none;
+}
+
+.ct-3{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top:100px
+}
+.ct-4{
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+  justify-content: center;
+  
+}
+.relative{
+  position: relative;
+}
+.fixed-bottom{
+  position: fixed;
+  bottom: 0px;
+}
+
+
+
+
 * {
   box-sizing: border-box;
 }
