@@ -34,7 +34,7 @@ const [orginal_Width,set_o]=useState()
        const promises= foo.map(async item =>{
     
         
-      fetch(`http://localhost:3000/large_00${item}.jpg`).then(r=>r.blob()).then(images=>
+      fetch(`https://appleww.vercel.app/large_00${item}.jpg`).then(r=>r.blob()).then(images=>
       {
         let url=URL.createObjectURL(images)
 imageArray.push(url)
