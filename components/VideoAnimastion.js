@@ -114,7 +114,7 @@ const [images,set_images]=useState([])
 useEffect(()=>{
     
   let foo=[]
-  for (var i = 0; i < 120; i++) {
+  for (var i = 0; i < 100; i++) {
       foo.push(i);
    }
 set_images(foo)
