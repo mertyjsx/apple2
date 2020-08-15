@@ -20,7 +20,7 @@ export default function Home() {
        
         <ImageAnimation ></ImageAnimation>
       
-        <h6 style={{position:"absolute", bottom:0}}>Copyright © 2020 Apple Inc. All rights reserved. this site is clone</h6>
+   
 </main>
     
     </div>
