@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import {TimelineMax,Power2,Power4} from "gsap"
+
 import $ from "jquery"
 
 
@@ -12,6 +13,12 @@ this.state={hidden:true}
 }
 
 componentDidMount(){
+
+  const GSAP = require("gsap/CSSPlugin");
+      const { CSSPlugin } = GSAP;
+     
+const C = CSSPlugin;
+
     var openTrigger = $(".menu-trigger");
 
     var openTriggerTop = openTrigger.find(".menu-trigger-bar.top");
@@ -383,11 +390,7 @@ return(
     <i class="close-trigger-bar right"></i>
   </span>
   <span class="logo">
-    <span>
-      ⬢
-      <i class="logo-title">UI</i>
-      <i class="logo-badge">6</i>
-    </span>
+  
  
   </span>
   <div class="inner-container">
