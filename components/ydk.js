@@ -19,6 +19,7 @@ const [orginal_Width,set_o]=useState()
     async function processArray() {
         // map array to promises
         let imageArray = []
+        
 
         
         let foo=[]

@@ -15,42 +15,44 @@ export default function Home() {
   const [orginal_Width,set_o]=useState()
 const handleScroll = () => {
   console.log("dasds")
-
+  let n=window.pageYOffset*0.15
+  
+  setSrollPosition(Math.floor(n))
+  
 set_width(window.innerWidth)
 
 };
 
 
+
+
 const handleScroll2 = () => {
-  console.log("dasds")
-let n=window.pageYOffset*0.4
+ 
 
-setSrollPosition(Math.floor(n))
-setSrollPosition2(window.pageYOffset*0.6)
-};
-
-
-
-
-useEffect(() => {
-  console.log("hello")
-    window.addEventListener("resize", handleScroll, { passive: true });
   
-    return () => {
-        window.removeEventListener('resize', handleScroll);
-    };
-}, []);
-
-
-
-useEffect(() => {
-  console.log("hello")
-    window.addEventListener("scroll", handleScroll2, { passive: true });
+  };
   
-    return () => {
-        window.removeEventListener('scroll', handleScroll2);
-    };
-}, []);
+  
+  
+  
+  
+  
+  
+  
+  useEffect(() => {
+  
+      window.addEventListener("scroll", handleScroll, { passive: true });
+    
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+  
+
+
+
+
+
 
 
 
@@ -61,9 +63,61 @@ useEffect(() => {
  set_width(window.innerWidth)
 }, []);
 
+if(width<600){
+
+  return(
+
+<div>
+
+<Video scrollPosition={scrollPosition}></Video>
+<hr ></hr>
+<div className="title-container">
+<h1 className="r2 title2">
+
+<span>Exactly</span>
+<br></br>
+Same as your app<br></br> But more fast.
+
+</h1>
+
+</div>
+
+<Lg orginal_width={width} scrollPosition={scrollPosition}></Lg>
 
 
- return(
-   <Video scrollPosition={scrollPosition}></Video>
- )
+
+
+
+</div>
+
+  )
+}
+else{
+  return(<div>
+  
+    <Video scrollPosition={scrollPosition}></Video>
+    <hr ></hr>
+    <div className="title-container">
+   <h1 className="r2 title2">
+  
+  <span>Exactly</span>
+  <br></br>
+  Same as your app<br></br> But more fast.
+  
+  </h1>
+   
+  </div>
+  
+  <Lg orginal_width={width} scrollPosition={scrollPosition}></Lg>
+  
+  
+  
+  
+  
+   </div>
+  )
+  
+
+
+}
 }

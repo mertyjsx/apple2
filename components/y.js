@@ -229,14 +229,15 @@ set_images(Array)
   return (
     <div className={styles.container}>
         
-    {images.map(item=> {
-    
-    
-  return(<img key={item} className={`${item==scrollPosition?'laptop-height100':'laptop-height0'}`}  src={`/large_00${item}.jpg`}></img>)
-     })}
-     
-    
-
+        <footer className={styles.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+       By orkunmertgs41@gmail.com
+        </a>
+      </footer>
    </div>
   )
 }
