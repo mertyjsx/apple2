@@ -127,6 +127,8 @@ src={"https://www.apple.com/v/macbook-pro-16/b/images/overview/display_hero_scre
   
   
      maxWidth:height*2,position:`${fixed?"fixed":`${newScroll>=1400?"relative":""}`}`,top:70,height:height}} >
+
+<h4 style={{position:"absolute", bottom:160,zIndex:900,fontSize:50,color:"white"}}>Copyright © 2020 Apple Inc. All rights reserved. This site is cloned from apple.com</h4>
    <img 
 style={{width:height*2,height:height,position:"absolute",bottom:20,maxHeight:height}}
 src="/res.png">
