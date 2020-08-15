@@ -105,11 +105,11 @@ src={"https://www.apple.com/v/macbook-pro-16/b/images/overview/display_hero_scre
 </img>
 {apply&&([
 <Fade ssrFadeout bottom duration={500}>
-<h4 className="lt10">Chris Burkard</h4>
+<h4 className="lt10">Mert Yigit</h4>
 </Fade>,
 
 <Fade ssrFadeout bottom duration={500}>
-<h5 className="lt15">Adventure Photographer</h5>
+<h5 className="lt15">Front End Developer</h5>
 </Fade>
 
 ])}
